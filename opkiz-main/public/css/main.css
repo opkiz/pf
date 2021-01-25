@@ -1,0 +1,54 @@
+/************************* common ***************************/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant:wght@400;500&display=swap');
+/* font-family: 'Cormorant', serif; font-family: 'Abel', sans-serif; */
+body {width: 100vw;}
+.wrapper {max-width: 1920px; margin:0 auto; /* border: 1px solid pink; */}
+h1 {font-family: 'Cormorant', serif;}
+.logo { cursor: pointer;}
+a:link {color: #818181;}
+a:link {color: #818181;}
+a:visited {color: #818181;}
+
+/************************* main ***************************/
+.main {width: 100vw; height: 100vh; overflow: hidden;}
+
+.navi-wrap {width: 100%; display: flex; justify-content: center; align-items: center; font-size: 1rem; margin-top: 2rem; position: fixed;}
+.navi-wrap .logobe {display: none;}
+.navi-wrap img {width: 1.75rem; margin: 0 2rem;}
+.navi-wrap div {font-family: 'Abel', sans-serif; margin: 0 2rem; cursor: pointer; transition: all 0.2s; color: #aaa;}
+
+
+.main-wrap {margin-top: 15rem;}
+
+.main-wrap h1 {/* border: 1px solid red;*/ font-weight: 500; font-size: 12vw;  line-height: 8vw; color: #ecd9b0; transition: all 1.2s; position: relative;}
+.main-wrap h1 > div {/*border: 1px solid green;*/ height: 80%; position: absolute; width: 100%; top: 15%;  cursor: pointer; }
+
+
+.main-wrap h1:nth-child(1) {left: 0; transform: translateX(23vw); margin-top: 2vw;}
+.main-wrap h1:nth-child(2) {left: 0; transform: translateX(34vw); margin-top: -1.5vw;}
+.main-wrap h1:nth-child(3) {left: 0; transform: translateX(17vw); margin-top: -1.5vw;}
+.main-wrap h1:nth-child(4) {left: 0; transform: translateX(38vw); margin-top: 2vw; }
+
+.main-wrap h1.active {text-align: left; transform: translateX(0); left: 3rem; color: #6285b5; font-size: 10.5vw;}
+.main-wrap h1.default{text-align: left; left: 50%; transform: translateX(0); font-size: 9vw; margin-top: 2vw; }
+
+/************************* about ***************************/
+.about {background-color: #fff; color: red;}
+.about-title > div {/* border: 2px solid red; */ font-family: 'Cormorant', serif; font-size: 30vw; margin-left: 2vw;}
+.about-desc > p {}
+.about-title > div:nth-child(2) {margin-top: -28vw;}
+.about-desc {/* border: 1px solid black; */ width: 50vw; float: right; font-family: 'Cormorant', serif; font-size: 2.5vw; text-align: left; margin: -13vw 4vw 3vw 0; }
+ 
+
+/************************* contact ***************************/
+.contact .info-wrap {display: flex; align-items: flex-start;}
+.contact .info-wrap > .pe {margin-right: 10rem;}
+.contact {display: flex; justify-content: space-between; align-items: center; padding-top: 100rem; width: 100%; position: relative;}
+
+.contact > .contact-back {background-color: #ecd9b0; opacity: 0.3; width: 48vw; height: 40vw; position: absolute; bottom: 0; right: 0;}
+
+.contact > .contact-info {background-color: rgb(98, 133, 181, 0.3);width: 65vw; position: absolute; bottom: 0; left: 0;}
+.contact .info-wrap {padding: 5rem; }
+.contact div {font-family: 'Cormorant', serif; font-size: 2.25vw ; margin-bottom: 2rem; color: #ddd;}
+.contact p {font-family: 'Abel', sans-serif;  font-size: 1.25vw; color: #f8f8f8;}
+.contact i {color: #f8f8f8; cursor: pointer; font-size: 1.25vw;}
