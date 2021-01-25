@@ -1,9 +1,0 @@
-{
-	"news": [
-		{"id": 1, "title": "네이버 스마트 주문 1,000p적립 이벤트", "src": "../img/promotion5.jpg", "date": "2020-09-09", "badge": ["Promotion"]},
-		{"id": 2, "title": "굿모닝 Take-out 세트", "src": "../img/promotion4.jpg", "cont": "Maecenas non lacus eget sapien finibus mollis id vel est. Integer vitae neque et lacus libero. Nunc rutrum nisi eget nunc semper, nec aliquam lectus lorem interdum.", "date": "2020-09-01", "badge": ["Recipes", "News"], "tag": ["Recipes", "By james", "19th January 2020", "1 Comment"]},
-		{"id": 3, "title": "비대면 주문 이벤트", "src": "../img/promotion3.jpg", "cont": "Morbi consequat, neque tincidunt auctor mattis, libero augue molestie nulla, at dapibus urna libero nec dolor. Aliquam venenatis magna eu libero finibus malesuada.", "date": "2020-09-01", "badge": ["Recipes", "News"], "tag": ["Recipes", "By james", "19th January 2020", "1 Comment"]},
-		{"id": 4, "title": "자동충전 이벤트", "src": "../img/promotion2.jpg", "cont": "Ut eu elit vel massa malesuada ornare in id magna. Vivamus pellentesque pulvinar porta. Curabitur cursus condimentum ex non aliquam!", "date": "2020-09-01", "badge": ["Recipes", "News"], "tag": ["Recipes", "By james", "19th January 2020", "1 Comment"]},
-		{"id": 5, "title": "신한탑스클럽 잉글리쉬 머핀 세트 53% 할인", "src": "../img/promotion1.jpg", "cont": "Ut eu elit vel massa malesuada ornare in id magna. Vivamus pellentesque pulvinar porta. Curabitur cursus condimentum ex non aliquam!", "date": "2020-06-18", "badge": ["Recipes", "News"], "tag": ["Recipes", "By james", "19th January 2020", "1 Comment"]}
-	]
-}
