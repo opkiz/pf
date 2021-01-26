@@ -1,41 +1,5 @@
-/************ 사전지식 *************/
-/* 
-// for(var v of datas) {
-// for(var i in datas) {
-for(var i=0; i<datas.length; i++){
-	html  = '<div class="slide">';
-	html += '<img src="'+datas[i].src+'" class="img">';
-	html += '</div>';
-	$(".main-wrap").append(html);
-} 
-
-$(".section").each(function(i){
-	var $obj = $(this);
-	if(i == 0) {
-		$(this).css("top", $(this).prev().outerHeight() + "px");
-	}
-	else {
-		setTimeout(function(){
-			var top = $obj.prev().offset().top + $obj.prev().outerHeight();
-			$obj.css("top", top+"px");
-		}, i * 300);
-	}
-}); 
-*/
-
 if(5>3 && 6>5) console.log("true && true");	// AND
 if(5>3 || 4>5) console.log("true || false"); // OR
-/*
-true 	&& true 	=> true
-true 	&& false 	=> false
-false && true 	=> false
-false && salse 	=> false
-
-true 	|| true 	=> true
-true 	|| false 	=> true
-false || true 	=> true
-false || false 	=> false
-*/
 
 /************ 전역변수 *************/
 var datas;
@@ -122,19 +86,7 @@ function onResize() {
 	$(".main-wrap").css("margin-top", $(".header").outerHeight() + "px");
 	var classHei = $(".class-wrap .item").eq(0).outerWidth() * 0.75;
 	$(".class-wrap .item").outerHeight(classHei);
-	/*
-	for(var i=0, adHei=0; i<$(".ad-wrap>.ad").length; i++) {
-		adHei = ($(".ad-wrap>.ad").eq(i).outerHeight() > adHei) 
-		? $(".ad-wrap>.ad").eq(i).outerHeight() 
-		: adHei;
-		console.log(adHei);
-	}
-	$(".ad-wrap > .ad").each(function(){
-		$(this).outerHeight(adHei);
-	});
-	*/
 }
-
 
 function onScroll() {
 	var scTop = $(this).scrollTop();
@@ -254,9 +206,6 @@ function onContact(event) {
 	this.reset();
 }
 
-function onTopClick() {
-	$("html, body").stop().animate({"scrollTop": 0}, 800, onScroll);
-}
 
 /************ 이벤트선언 *************/
 $(window).resize(onResize).trigger("resize");
@@ -276,3 +225,9 @@ var $masonry = $(".classes").imagesLoaded(onMasonry);
 $('#contactForm').submit(onContact);
 
 $(".bt-top").click(onTopClick);
+$(".header > .navi-child").click(onNaviClick);
+
+/************ 페이지 이동 *************/
+function onTopClick() {
+	$("html, body").stop().animate({"scrollTop": 0}, 800, onScroll);
+}
