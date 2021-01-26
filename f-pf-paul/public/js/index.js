@@ -1,59 +1,5 @@
-/*************** 사전지식 ***************/
-/*
-
-function a() {
-
-}
-function b() {
-	return "B";
-}
-var fnA = a();
-var fnB = b();
-console.log(fnA, fnB);
-
-var win = {
-	scTop: 0,
-	wid: 0,
-	hei: 0,
-}
-
-1. 위의 선언이 아래로 바뀜
-
-window.scTop = 0;
-window.wid= 0;
-window.hei = 0;'
-
-2. 이벤트 함수에 지정해줬으니까 따로 설정할 필요가 없어서 지워도 됨
-
-
-var css = {"position": "absolute", "top": "50%", "transform": "translateY(-50%)", "font-size": "5rem", "z-index": 900, "color": "#fff"};
-var $btLeft = $('<i class="bt-lt fa fa-angle-left"></i>').appendTo(".main-wrap").css(css);
-var $btRight = $('<i class="bt-rt fa fa-angle-right"></i>').appendTo(".main-wrap").css(css);
-$btLeft.css("left", "2rem");
-$btRight.css("right", "2rem");
-js로 css붙이는 법
-
- */
-
-
-/******************* 전역설정 ********************/
-//Slide.scale(".main-wrap", ".banner", onComplete);
-//Slide.scale(".main-wrap2", ".banner", onComplete);
 
 var KAKAO_KEY = 'fd1a148a4042d63f1da1845465af3d1f';
-
-
-
-/******************* 슬라이드 객체형 ********************/
-/*
-function onComplete(prevSlide, nextSlide, container) {
-	$(prevSlide).find(".slogan").css({"opacity": 0, "transform": "scale(0.5)"});
-	$(prevSlide).find(".writer").css({"opacity": 0, "transform": "translateY(5vw)"});
-	$(nextSlide).find(".slogan").css({"opacity": 1, "transform": "scale(1)"});
-	$(nextSlide).find(".writer").css({"opacity": 1, "transform": "translateY(0)"});
-}
-*/
-
 
 /******************* 슬라이드 직접 코딩 ********************/
 var mainNow = 0;
@@ -66,11 +12,9 @@ var mainTitles = [
 ];
 var mainWriters = ["청명한 가을 날씨에 잘 어울리는 밀크티 음료","폴 바셋이 선보이는 시원한 여름 디저트 빙수 3종","깔끔한 콜드브루에 부드럽고 달콤한 연유 크림을 얹은 커피"];
 
-mainInit(); //init은 기본 셋팅 상태! 그래서 처음에 이닛을 한 번 돌여줘야함
+mainInit(); 
 
 function mainInit() {
-	//1. 현재 나타나있는 슬라이더의 banner를 지운다
-	//2. 나타나야하는 slide를 붙인다
 	$(".main-wrap > .banner").remove();
 	$(mainSlide[mainNow]).appendTo(".main-wrap");
 	$(".main-wrap").find(".slogan").html(mainTitles[mainNow]);
@@ -78,11 +22,6 @@ function mainInit() {
 }
 
 function mainAni() {
-// 1. 바뀐 mainNow번째 그림을 scale(1.3), opacity: 0 인 상태로 화면에 붙일것
-// 2. 붙인 그림을 animation시킬것(css값 변경)
-// 3. 애니메이션이 완료되면 mainInit()을 실행하여 원상태로 만들것
-// 4. 글씨들이 사라지는 애니메이션이 되면 사라지자마자 내용이 바뀐 글씨가 다시 나타난다
-
 	var slide = $(mainSlide[mainNow]).appendTo(".main-wrap").css({"transform": "scale(1.3)", "opacity": 0});
 	setTimeout(function() {
 		slide.css({"transform": "scale(1)", "opacity": 1});
@@ -100,13 +39,11 @@ function mainAni() {
 }
 
 function onMainPrev() {
-		// 1. 나타날 슬라이드의 번호(mainNow)를 찾아낸다.
 	mainNow = (mainNow == 0) ? mainLast : mainNow - 1;
 	mainAni();
 }
 
 function onMainNext() {
-		// 1. 나타날 슬라이드의 번호(mainNow)를 찾아낸다.
 	mainNow = (mainNow == mainLast) ? 0 : mainNow + 1;  
 	mainAni();
 }
@@ -308,21 +245,6 @@ function newsAni() {
 }
 
 
-/******************* press 동적생성 ********************/
-$.get("../json/press.json", onPressLoad);
-function onPressLoad(r) {
-	for (var i in r.press){
-			html = '<li class="press">';
-			html += '<div class="logo">';
-			html += '<img src="'+r.press[i].logo+'" alt="logo">';
-			html += '</div>';
-			html += '<div class="cont">'+r.press[i].cont+'</div>';
-			html += '<div class="writer">'+r.press[i].writer+'</div>';
-			html += '</li>';
-			$(".press-ul").append(html);
-	}
-} 
-
 
 /******************* 이벤트 함수 ********************/
 function onResize() {
@@ -349,8 +271,6 @@ function onResize() {
 	$(".prd-wrap").css("left", prdLeft+"%");
 	$(".news-wrap").css("left", newsLeft+"%");
 }
-
-// this = window(자바스크립트적사용)  this.wid = "밖에다가 wid라는 변수를 선언해라" / $(this)는 제이쿼리(inner~)사용해야하기때문에 사용
 
 function onScroll() {
 
@@ -407,7 +327,7 @@ function onTop(){
 }
 
 function onNaviShow() {
-	$(".navi-mo").css("display", "block"); //none - block주면 안먹으니 셋타임아웃 걸어줘야함
+	$(".navi-mo").css("display", "block");
 	setTimeout(function(){
 		$(".header .bt-close").css("opacity", 1);
 		$(".navi-mo").css("background-color", "rgba(0, 0, 0, 0.6)");
