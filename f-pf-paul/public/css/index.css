@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, .rc, button {font-family: 'Roboto Condensed', sans-serif; fo
 
 
 /*************** header ***************/
-.header {width: 100%; display: flex; justify-content: center; align-items: center; background-color: #382e2b; color: #f8f8f8; font-size: 1.25rem;
+.header {width: 100%; display: flex; justify-content: center; align-items: center; background-color: #382e2b; color: #f8f8f8; font-size: 1.125rem;
 	padding: 1.5rem; position: absolute; bottom: 0; z-index: 999;}
 .header > .navi, .header > .logo {margin: 0 1rem; cursor: pointer;}
 .header > .navi {margin: 0 2rem; transition: all 0.5s;}
