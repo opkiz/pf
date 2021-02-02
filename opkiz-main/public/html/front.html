@@ -14,38 +14,28 @@
 	<script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-	<div class="front">
-		<div class="mini-navi">
-			<div class="home abel pointer"><a href="main.html">HOME</a></div>
-			<div class="where abel pointer">Simon says</div>
-		</div>
-
-		<div class="front-wrap wrapper">
-			<div class="front-sc">
-				<div class="scroll">
-					<div class="sc-line" ondrop="drop(event)" ondragover="dragover(event)">
-						<div class="circle" draggable="true" ondragstart="dragstart(event)"></div>
-					</div>
-					<div class="scroll-tit">Scroll</div>
-				</div> <!-- scroll -->
-			</div> <!-- front-sc -->
-			<div class="front-pf">
-				<div class="pf-thumb"><img src="../img/front-thumb-1.png" alt="프론트엔드썸네일" class="img"></div>
-				<div class="pf-thumb"><img src="../img/front-thumb-2.png" alt="프론트엔드썸네일" class="img"></div>
-				<div class="pf-thumb"><img src="../img/front-thumb-3.png" alt="프론트엔드썸네일" class="img"></div>
-				<div class="pf-thumb"></div>
-				<div class="pf-thumb"></div>
-			</div> <!-- front-pf -->
-		</div> <!-- front-wrap -->
-
-		<div class="font-wrapper">
-			<div class="back-font">
-				<span>Frontend</span>
+	<section class="mini-navi">
+		<div class="home abel pointer"><a href="main.html">HOME</a></div>
+		<div class="where abel pointer"><a href="front.html">FrontEnd</a></div>
+	</section>
+	<section class="items-wrap page">
+		<!-- <li class="items">
+			<div class="item-img">
+				<img src="../img/kbp-goods2.jpg" alt="item1" class="img">
+				<div class="item-name"></div>
 			</div>
+		</li> -->
+		<div class="item-slide-stage">
+			<ul class="item-slide-wrap">
+			</ul>
+			<div class="bt-prev">〈</div>
+			<div class="bt-next">〉</div>
+			<div class="item-slide-bar"></div>
 		</div>
-	</div> <!-- front -->
-    
 
+	</section> <!-- tour-wrap -->
+
+		<div class="copyright">© 2021 opkiz All rights reserved.</div>
 	<script src="../js/front.js"></script>
 </body>
 </html>
