@@ -1,10 +1,10 @@
 {
 	"items": [
-		{"id": 1, "name": "", "src": "../img/fourb1.jpg"},
-		{"id": 2, "name": "", "src": "../img/kbp-goods2.jpg"},
-		{"id": 3, "name": "", "src": "../img/ono1.jpeg"},
-		{"id": 4, "name": "", "src": "../img/paul.jpg"},
-    {"id": 5, "name": "", "src": "../img/promotion1.jpg"},
-    {"id": 6, "name": "", "src": "../img/weather.jpg"}
+		{"id": 1, "name": "FOURB<br>Bagle", "src": "../img/fourb2.jpg"},
+		{"id": 2, "name": "KBP fabrics", "src": "../img/kbp-goods2.jpg"},
+		{"id": 3, "name": "Hair Design O.N.O", "src": "../img/ono1.jpeg"},
+		{"id": 4, "name": "Paul Basset", "src": "../img/paul.jpg"},
+    {"id": 5, "name": "Firebase note&chat", "src": "../img/weather.jpg"},
+    {"id": 6, "name": "Weather App", "src": "../img/weather.jpg"}
 	]
 }
