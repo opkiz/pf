@@ -1,3 +1,4 @@
+/******* 메인화면 *******/
 $(".main-wrap").find("h1 > div").mouseenter(function(e){
 	e.stopPropagation();
 	$(".main-wrap").find("h1").removeClass("active").addClass("default");
@@ -15,7 +16,8 @@ $(".navi-wrap").find(".goabout").click(function() {
   }, 500);
 });
 
-function onScroll() {
+/******* 스크롤반응 *******/
+/* function onScroll() {
 	this.scTop = $(this).scrollTop(); 
 	var aboutStart = $(".about").offset().top;
 	var aboutHei = $(".about").innerHeight();
@@ -36,8 +38,8 @@ function onScroll() {
 		$(".navi-wrap").find("a").css("color", "#575757");
 	}
 }
-
-var copyLink = function(str) {
+ */
+/* var copyLink = function(str) {
     if( is_ie() ) {
         window.clipboardData.setData("Text", str);
         alert("복사되었습니다.");
@@ -47,4 +49,15 @@ var copyLink = function(str) {
 };
 
 $(window).scroll(onScroll).trigger("scroll");
-$(".main-title").find(".am").click(goAboutme);
+$(".main-title").find(".am").click(goAboutme); */
+
+/******* 페이지이동*******/
+$(".main").find("h1:nth-child(2)").click(function() {
+	location.href = "about.html";
+});
+$(".main").find("h1:nth-child(3)").click(function() {
+	location.href = "front.html";
+});
+$(".main").find("h1:nth-child(4)").click(function() {
+	location.href = "back.html";
+});
