@@ -8,19 +8,19 @@ font-family: 'Gruppo', cursive; font-family: 'Noto Sans KR', sans-serif; */
 body {width: 100vw; max-width: 1920px; position: relative; }
 h1 {font-family: 'Cormorant', serif;}
 .wrappersm {max-width: 1300px; margin: 0 auto;}
-a:link {color: #222;}
-a:link {color: #222;}
-a:visited {color: #222;}
+a:link {color: #008800;}
+a:link {color: #008800;}
+a:visited {color: #008800;}
 .pointer {cursor: pointer;}
 .mini-navi {display: flex; justify-content: space-between; align-items: center; font-size: 0.725rem; margin: 0 4rem;  padding:2rem 0;} 
-.copyright {padding: 1rem 0; font-family: 'Abel', sans-serif; text-align: center; margin: 0 auto; margin-top: 2rem; margin-bottom: 1rem; color: green; border: 1px solid green; border-radius: 70%; width: 15%;}
+.copyright {padding: 1rem 0; font-family: 'Abel', sans-serif; text-align: center; margin: 0 auto; margin-top: 2rem; margin-bottom: 1rem; color: green;}
 .things {color: #333; font-family: 'Gruppo', cursive; font-size: 1.25rem; font-weight: 300;}
 .little {color: #444; font-family: 'Montserrat', sans-serif; font-size: 0.825rem;}
 /************************* about ***************************/
 .about {/* border: 1px solid blue; */ font-family: 'Cormorant', serif;}
-.about > .about-title {color: red; width: 30%; text-align: center; border: 1px solid red; border-radius: 70%; font-size: 5rem; margin-left: 10rem;}
+.about > .about-title {color: red; width: 35%; text-align: center; border: 1px solid red; border-radius: 70%; font-size: 6rem; margin-left: 10rem;}
 .about > .about-desc {/* border: 1px solid black; */ width: 66%; float: right; }
-.about-info {color: #6e8cb6; font-family: 'Gruppo', cursive; font-size: 2rem; margin: 1.5rem 0; }
+.about-info {color: #444; font-family: 'Gruppo', cursive; font-size: 2rem; margin: 1.5rem 0; }
 
 
 .about .about-intro {color: #333; text-align: center;}
@@ -44,17 +44,22 @@ a:visited {color: #222;}
 }
 .about-skill .graphs {
   width: 240px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(167, 167, 167, 0.2);
   transition: all 0.5s;
 }
 .about-skill .graph {
   padding: 7px 0;
 }
 .about-skill .design-wrap, .publishing-wrap {margin-right: 0.5rem;}
-.about-skill .design-wrap .graph {background-color: #111 ; /* linear-gradient(0.25turn, #ffce9f, #ff849c) */;}
-.about-skill .publishing-wrap .graph {background-color: #111;}
-.about-skill .development-wrap .graph {background-color: #111;}
+.about-skill .design-wrap .graph {background-color: #3b698d;/*background: linear-gradient(0.35turn, #fdead7, #ff0000);*/}
+.about-skill .publishing-wrap .graph {background-color: #df8a5c;/*background: linear-gradient(0.35turn, #fdead7, #008000);*/}
+.about-skill .development-wrap .graph {background-color: #295a52;/*background: linear-gradient(0.35turn, #fdead7, #0000ff);*/}
 .graph {width: 0;}
 
 /************************* about-contact ***************************/
 .about-contact {margin-right: 3rem;}
+
+
+/************************* mobile ***************************/
+@media screen and (max-width: 991px) {
+}

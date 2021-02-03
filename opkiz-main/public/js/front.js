@@ -1,5 +1,5 @@
-/********** items **********/
-var itemNow = 0, itemSize = 6; 
+/********** item-wrap 직접 코딩 **********/
+var itemNow = 0, itemSize = 7; 
 var items = [], itemArr = [];
 var itemLast;
 var itemLeft;
@@ -21,11 +21,12 @@ function onItemsLoad(r) {
 		html  = '<li class="items">';
 		html += '<div class="item-img">';
 		html += '<img src="' + r.items[i].src + '" alt="item" class="img">';
-    html += '</div>';
     html += '<div class="item-desc">';
     html += '<div class="item-name">' + r.items[i].name + '</div>';
-    html += '<p>see more</p>';
+    html += '<div class="item-used">' + r.items[i].used + '</div>';
+    html += '<div class="item-see"><a href="'+r.items[i].href+'">see more</a></div>';
     html += '</div>'; 
+    html += '</div>';
 		html += '</li>';
 		items.push($(html).appendTo(".item-slide-wrap", root));
 	}
@@ -62,19 +63,19 @@ function itemInit() {
 
 function onPrev() {
 	itemNow = (itemNow == 0) ? itemLast : itemNow - 1;
-	itemTar = 0;
+	itemTar = "13%";
 	itemAni();
 }
 
 function onNext() {
 	itemNow = (itemNow == itemLast) ? 0 : itemNow + 1;
-	itemTar = "-40%";
+	itemTar = "-53%";
 	itemAni();
 }
 
 console.log($(".item-slide-bar .bar", root).click("hi"));
 $(".item-slide-bar .bar", root).click(onitemBarClick);
-function onItemBarClick() {
+function onitemBarClick() {
 	$(".item-slide-bar .bar", root).removeClass("active");
 	$(".item-slide-bar .bar", root).eq(0).addClass("active");
 	var itemTar = [];
@@ -82,7 +83,7 @@ function onItemBarClick() {
 	itemNow = $(this).index();
 	itemTar = (itemNow > old) ? "-40%" : 0;
 	$(".item-slide-wrap", root).stop().animate({"left": itemTar}, 500, itemInit);
-itemrAni();
+	itemAni();
 }
 
 function itemAni() {
@@ -97,13 +98,11 @@ function itemAni() {
 	$(".item-slide-wrap", root).stop().animate({"left": itemTar}, 500, itemInit);
 }
 
-
 /********** 이벤트 등록 **********/
-$(window).resize(onResize).trigger("resize");
-$(window).scroll(onScroll).trigger("scroll");
+
 
 /******* 페이지이동*******/
-$(".items-wrap").find("p:nth-child(1)").click(function() {
+/* $(".items-wrap").find(".item-see").eq(1).click(function() {
 	location.href = "https://opkiz-bagel.web.app/html/index.html";
 });
 $(".items-wrap").find("p:nth-child(2)").click(function() {
@@ -112,3 +111,4 @@ $(".items-wrap").find("p:nth-child(2)").click(function() {
 $(".items-wrap").find("p:nth-child(3)").click(function() {
 	location.href = "https://opkiz-shop.web.app/html/index.html";
 });
+ */

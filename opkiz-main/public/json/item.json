@@ -1,10 +1,11 @@
 {
 	"items": [
-		{"id": 1, "name": "FOURB<br>Bagle", "src": "../img/fourb2.jpg"},
-		{"id": 2, "name": "KBP fabrics", "src": "../img/kbp-goods2.jpg"},
-		{"id": 3, "name": "Hair Design O.N.O", "src": "../img/ono1.jpeg"},
-		{"id": 4, "name": "Paul Basset", "src": "../img/paul.jpg"},
-    {"id": 5, "name": "Firebase note&chat", "src": "../img/weather.jpg"},
-    {"id": 6, "name": "Weather App", "src": "../img/weather.jpg"}
+		{"id": 1, "name": "1. FOURB Bagle Homepage Renewal", "used": "HTML, CSS ", "href": "https://opkiz-bagel.web.app/html/index.html", "src": "../img/fourb2.jpg"},
+		{"id": 2, "name": "2. KBP fabrics<br>Catalogue Page", "used": "HTML, CSS, JS, JQuery, Bootstrap", "href": "https://opkiz-kbp.web.app/html/index.html",  "src": "../img/kbp-goods2.jpg"},
+		{"id": 3, "name": "3. Hair Design O.N.O Homepage Renewal", "used": "HTML, CSS, JS, JQuery", "href": "https://opkiz-shop.web.app/html/index.html",  "src": "../img/ono1.jpeg"},
+		{"id": 4, "name": "4. Paul Basset <br> Homepage Renewal", "used": "HTML, CSS, JS, JQuery, Ajax, Kakao Map API", "href": "https://opkiz-cafe.web.app/html/index.html",  "src": "../img/paul.jpg"},
+    {"id": 5, "name": "5. note Application", "used": "HTML, CSS, JS, JQuery, Firebase Database", "href": "https://opkiz-note.web.app/html/index.html",  "src": "../img/phone.jpg"},
+    {"id": 6, "name": "6. chat Application", "used": "HTML, CSS, JS, JQuery, Firebase Database", "href": "https://opkiz-note.web.app/html/chat.html",  "src": "../img/phone.jpg"},
+    {"id": 6, "name": "7. Vue.js<br>Weather App", "used": "Vue.js, Vue X, Vue Router, openweathermap", "href": "https://opkiz-v-weather-5a256.web.app",  "src": "../img/weather2.jpg"}
 	]
 }

@@ -1,14 +1,15 @@
 /************************* common ***************************/
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant:wght@400;500&display=swap');
 /* font-family: 'Cormorant', serif; font-family: 'Abel', sans-serif; */
-body {width: 100vw;}
+body {width: 100vw; height: 100vh;}
 .wrapper {max-width: 1920px; margin:0 auto; /* border: 1px solid pink; */}
 .wrappersm {max-width: 1300px; margin: 0 auto;}
 h1 {font-family: 'Cormorant', serif;}
 .logo { cursor: pointer;}
-.copyright {padding: 1rem 0; font-family: 'Abel', sans-serif; text-align: center; margin: 2rem auto; color: green; border: 1px solid green; border-radius: 70%; width: 15%;}
+.copyright {padding: 1rem 0; font-family: 'Abel', sans-serif; text-align: center; margin: 8rem auto; color: green; border: 1px solid green; border-radius: 70%; width: 15%;}
 /************************* main ***************************/
-.main {width: 100vw; height: 100vh; overflow: hidden;}
+/* .main {width: 100vw; height: 100vh; overflow: hidden;} */
+.main {overflow: hidden;}
 
 .navi-wrap > a:link {color: #818181;}
 .navi-wrap > a:link {color: #818181;}
@@ -20,9 +21,10 @@ h1 {font-family: 'Cormorant', serif;}
 .navi-wrap div {font-family: 'Abel', sans-serif; margin: 0 2rem; cursor: pointer; transition: all 0.2s; color: #818181;}
 
 
-.main-wrap {margin-top: 10rem;}
+/* .main-wrap {margin-top: 10rem;} */
+.main-wrap {margin-top: 12rem;}
 
-.main-wrap h1 {/* border: 1px solid red;*/ font-weight: 500; font-size: 12vw;  line-height: 8vw; color: #ecd9b0; transition: all 1.2s; position: relative;}
+.main-wrap h1 {/* border: 1px solid red;*/ font-weight: 500; font-size: 12vw; line-height: 8vw; color: #ecd9b0; transition: all 1.2s; position: relative;}
 .main-wrap h1 > div {/*border: 1px solid green;*/ height: 80%; position: absolute; width: 100%; top: 15%;  cursor: pointer; }
 
 .main-wrap a:link {color: #ecd9b0;}
@@ -32,7 +34,11 @@ h1 {font-family: 'Cormorant', serif;}
 .main-wrap h1:nth-child(1) {left: 0; transform: translateX(23vw); margin-top: 2vw;}
 .main-wrap h1:nth-child(2) {left: 0; transform: translateX(34vw); margin-top: -1.5vw;}
 .main-wrap h1:nth-child(3) {left: 0; transform: translateX(17vw); margin-top: -1.5vw;}
-.main-wrap h1:nth-child(4) {left: 0; transform: translateX(38vw); margin-top: 2vw; }
+/* .main-wrap h1:nth-child(4) {left: 0; transform: translateX(38vw); margin-top: 2vw; } */
 
 .main-wrap h1.active {text-align: left; transform: translateX(0); left: 3rem; color: #6285b5; font-size: 10.5vw;}
 .main-wrap h1.default{text-align: left; left: 50%; transform: translateX(0); font-size: 9vw; margin-top: 2vw; }
+
+/************************* mobile ***************************/
+@media screen and (max-width: 991px) {
+}
