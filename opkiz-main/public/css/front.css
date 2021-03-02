@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
 /* font-family: 'Cormorant', serif; font-family: 'Abel', sans-serif; font-family: 'Montserrat', sans-serif;
 font-family: 'Gruppo', cursive; font-family: 'Noto Sans KR', sans-serif; font-family: 'Cormorant Garamond', serif;*/
+@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 body {width: 100vw; height: 100vh; /* background-color: #3e4848; */}
 h1 {font-family: 'Cormorant', serif;}
@@ -22,28 +25,29 @@ a:visited {color: #ff0000;}
 .body-ment {font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 10rem; text-align: center; color: rgb(250, 235, 215, 0.4);
 position: absolute; top: -1.5rem; left: 20%;}
 /************************* items1 ***************************/
-.items-wrap {width: 70%;  margin: 2rem auto; overflow: hidden;}
+.items-wrap {width: 70%;  margin: 1rem auto; overflow: hidden;}
 .items-wrap .item-slide-stage {margin: 0 auto; position: relative; }
 .items-wrap .item-slide-wrap {display: flex; margin: auto; padding-bottom: 50px; left: -20%; width: 140%; position: relative; overflow: hidden;}
 
-.items-wrap .items {flex: 24% 0 0; user-select: none; padding: 0 4rem; transition: all 0.5s; position: relative;}
+.items-wrap .items {flex: 25% 0 0; user-select: none; padding: 0 4rem; transition: all 0.5s; position: relative;}
 .items-wrap .item-img {width: 120%; overflow: auto; }
 .items-wrap .item-img > img {transition: all 1s;}
 
-.items-wrap .item-desc {margin-top: 1rem; padding: 0.5rem; border: 1px solid green; border-radius: 10px; font-family: 'Gruppo', cursive; }
-.items-wrap .item-name {margin-bottom: 0.5rem; font-size: 1.125rem;}
-.items-wrap .item-used {margin-bottom: 0.5rem; font-size: 0.75rem;}
-.items-wrap .item-see {font-size: 0.5rem; cursor: pointer;}
+.items-wrap .item-desc {margin-top: 1rem; padding: 0.5rem; border: 1px solid green; border-radius: 10px;}
+.items-wrap .item-name {margin-bottom: 0.5rem; font-size: 1.125rem; font-family: 'Gruppo', cursive; }
+.items-wrap .item-used {margin: 1rem 0; font-size: 0.75rem; font-family: 'GmarketSansLight';}
+.items-wrap .item-more {font-family: 'GmarketSansLight'; font-size: 0.5rem; margin-bottom: 0.5rem;}
+.items-wrap .item-see {font-family: 'GmarketSansLight'; font-size: 0.5rem; cursor: pointer; text-align: right;}
 .items-wrap .item-see > a:link {color: #555;}
 .items-wrap .item-see > a:link {color: #555;}
 .items-wrap .item-see > a:visited {color: #555;}
 
-.item-slide-bar {margin: 3rem auto 0 auto; text-align: center; user-select: none;}
-.item-slide-bar > .bar {margin: 0 6px; background-color: transparent; cursor: pointer; position: relative; width: 1.5px; height: 29px; padding: 0 2px;}
-.item-slide-bar > .bar::after {content: ''; position: absolute; bottom: 0; left: 0; display: inline-block; width: 1.5px; height: 15px; background: #ff0000;
+.item-slide-bar {margin: 1rem auto 0 auto; text-align: center; user-select: none;}
+.item-slide-bar > .bar {margin: 0 6px; background-color: transparent; cursor: pointer; position: relative; width: 1.5px; height: 24px; padding: 0 2px;}
+.item-slide-bar > .bar::after {content: ''; position: absolute; bottom: 0; left: 0; display: inline-block; width: 1.5px; height: 12px; background: #ff0000;
   transition: all 0.5s;}
-.item-slide-bar > .bar.active::after {height: 29px;}
-.item-slide-bar > .bar:hover::after {height: 29px;}
+.item-slide-bar > .bar.active::after {height: 24px;}
+.item-slide-bar > .bar:hover::after {height: 24px;}
 
 .items-wrap .bt-prev, .items-wrap .bt-next {z-index: 100; position: absolute; top: 50%; color: #ff0000; border: 1px solid #ff0000; padding: 0.5rem; border-radius: 48%; font-size: 2rem; transition: all 0.5s;  transform: rotate(90deg);}
 .items-wrap .bt-prev:hover, .items-wrap .bt-next:hover {cursor: pointer;}

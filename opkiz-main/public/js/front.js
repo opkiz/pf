@@ -24,6 +24,7 @@ function onItemsLoad(r) {
     html += '<div class="item-desc">';
     html += '<div class="item-name">' + r.items[i].name + '</div>';
     html += '<div class="item-used">' + r.items[i].used + '</div>';
+    html += '<div class="item-more">' + r.items[i].mobile + ' 제작기간 ' + r.items[i].howlong + ' 100% 개인작업</div>';
     html += '<div class="item-see"><a href="'+r.items[i].href+'">see more</a></div>';
     html += '</div>'; 
     html += '</div>';
@@ -63,13 +64,13 @@ function itemInit() {
 
 function onPrev() {
 	itemNow = (itemNow == 0) ? itemLast : itemNow - 1;
-	itemTar = "13%";
+	itemTar = "15%";
 	itemAni();
 }
 
 function onNext() {
 	itemNow = (itemNow == itemLast) ? 0 : itemNow + 1;
-	itemTar = "-53%";
+	itemTar = "-55%";
 	itemAni();
 }
 

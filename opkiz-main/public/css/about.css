@@ -18,14 +18,16 @@ a:visited {color: #008800;}
 .little {color: #444; font-family: 'Montserrat', sans-serif; font-size: 0.825rem;}
 /************************* about ***************************/
 .about {/* border: 1px solid blue; */ font-family: 'Cormorant', serif;}
-.about > .about-title {color: red; width: 35%; text-align: center; border: 1px solid red; border-radius: 70%; font-size: 6rem; margin-left: 10rem;}
+.about > .about-title {color: red; width: 35%; text-align: center;  font-size: 6rem; margin-left: 10rem;}
 .about > .about-desc {/* border: 1px solid black; */ width: 66%; float: right; }
-.about-info {color: #444; font-family: 'Gruppo', cursive; font-size: 2rem; margin: 1.5rem 0; }
+.about-info {color: #444; font-family: 'Gruppo', cursive; font-size: 2rem; margin: 2rem 0;}
 
-
-.about .about-intro {color: #333; text-align: center;}
-.about-intro > h1 {font-family: 'Gruppo', cursive; margin-bottom: 0.5rem; }
-.about-intro > p {font-family: 'Noto Sans KR', sans-serif; font-size: 0.7rem; color: #555;}
+.about-intro {color: #333; text-align: center; display: flex; justify-content:center; align-items:flex-end; margin-bottom: 2.125rem;}
+.about-photo {width: 14rem; border: 1px solid red; border-radius: 80%; overflow: hidden;}
+.me {width: 14rem;}
+.about-name {margin-left: 3rem;}
+.about-name > h1 {font-family: 'Gruppo', cursive; margin-bottom: 0.5rem; }
+.about-name > p {font-family: 'Noto Sans KR', sans-serif; font-size: 0.7rem; color: #555;}
 
 .box > p {color: #444; font-family: 'Montserrat', sans-serif; font-size: 0.825rem;}
 

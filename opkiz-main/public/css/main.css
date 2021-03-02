@@ -6,7 +6,7 @@ body {width: 100vw; height: 100vh;}
 .wrappersm {max-width: 1300px; margin: 0 auto;}
 h1 {font-family: 'Cormorant', serif;}
 .logo { cursor: pointer;}
-.copyright {padding: 1rem 0; font-family: 'Abel', sans-serif; text-align: center; margin: 8rem auto; color: green; border: 1px solid green; border-radius: 70%; width: 15%;}
+.copyright {padding: 1rem 0; font-family: 'Abel', sans-serif; text-align: center; margin: 8rem auto; color: green;  width: 15%;}
 /************************* main ***************************/
 /* .main {width: 100vw; height: 100vh; overflow: hidden;} */
 .main {overflow: hidden;}
@@ -16,8 +16,7 @@ h1 {font-family: 'Cormorant', serif;}
 .navi-wrap > a:visited {color: #818181;}
 
 .navi-wrap {width: 100%; display: flex; justify-content: center; align-items: center; font-size: 1rem; margin-top: 2rem; position: fixed;}
-.navi-wrap .logobe {display: none;}
-.navi-wrap img {width: 1.75rem; margin: 0 2rem;}
+.navi-wrap img {width: 3rem; margin: 0 2rem;}
 .navi-wrap div {font-family: 'Abel', sans-serif; margin: 0 2rem; cursor: pointer; transition: all 0.2s; color: #818181;}
 
 

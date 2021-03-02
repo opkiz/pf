@@ -58,6 +58,7 @@ $(".main").find("h1:nth-child(2)").click(function() {
 $(".main").find("h1:nth-child(3)").click(function() {
 	location.href = "front.html";
 });
-$(".main").find("h1:nth-child(4)").click(function() {
+/* $(".main").find("h1:nth-child(4)").click(function() {
 	location.href = "back.html";
-});
+}); */
+
